@@ -21,11 +21,22 @@ typedef struct Student Student;
 
 int main()
 {
-	return 0;
+	struct Student students[100];
+	int studentCount = 0;
+	char line[128];
 
-}
+	printf("(이름 | 학번 | 학과 | 학년) 형식으로 입력하세요\n");
+	printf("종료 하려면 'exit'를 입력하세요.\n");
+	
 
-void Studentsdata()
-{
-	Student Student
+	while (studentCount < 100)
+	{
+		printf("입력 > ");
+		getchar();
+		fgets(Student.name);
+	}
+	
+
+	return 0; 
+
 }
