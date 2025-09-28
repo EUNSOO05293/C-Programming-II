@@ -124,6 +124,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="assign01.c" />
+    <ClCompile Include="assign04.c" />
+    <ClCompile Include="assign06.c" />
+    <ClCompile Include="assign08.c" />
+    <ClCompile Include="assign09.c" />
+    <ClCompile Include="assign10.c" />
+    <ClCompile Include="assign12.c" />
+    <ClCompile Include="assign13.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
