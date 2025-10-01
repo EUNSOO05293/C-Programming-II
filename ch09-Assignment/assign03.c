@@ -40,7 +40,7 @@ void String()
 		z++;
 
 	}
-	printf(str);
+	printf("% s", str);
 
 	return;
 	
