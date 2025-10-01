@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 typedef struct point {
 	int x;
 	int y;
@@ -23,7 +22,6 @@ Point mul10(Point pt) {
 
 	return pr;
 }
-
 int test_point() {
 	Point pa = { 1,2 };
 	Point pb = { 3,4 };
