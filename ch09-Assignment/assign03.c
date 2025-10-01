@@ -37,7 +37,6 @@ void String()
 		{
 			str[z] = toupper(str[z]);
 		}
-		z++;
 
 	}
 	printf("%s", str);
