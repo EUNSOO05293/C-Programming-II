@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="contact.c" />
+    <ClCompile Include="test_point.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="구조체.txt" />
