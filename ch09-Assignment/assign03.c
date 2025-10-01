@@ -22,10 +22,9 @@ int main()
 void String()
 {
 	char str[100];
-	int z = 0;
 
 	printf("¹®ÀÚ¿­? ");
-	scanf("%s", str);
+	gets(str);
 	
 	for (int z = 0; z< strlen(str); z++)
 	{
