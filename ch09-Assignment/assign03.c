@@ -22,22 +22,22 @@ int main()
 void String()
 {
 	char str[100];
-	int i = 0;
+	int z = 0;
 
 	printf("¹®ÀÚ¿­? ");
 	scanf("%s", str);
 	
-	while (str[i])
+	for (int z = 0; z< strlen(str); z++)
 	{
-		if (isupper(str[i]))
+		if (isupper(str[z]))
 		{
-			str[i] = tolower(str[i]);
+			str[z] = tolower(str[z]);
 		}
-		else if (islower(str[i]))
+		else if (islower(str[z]))
 		{
-			str[i] = toupper(str[i]);
+			str[z] = toupper(str[z]);
 		}
-		i++;
+		z++;
 
 	}
 	printf(str);
