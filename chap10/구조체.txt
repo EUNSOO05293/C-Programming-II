@@ -44,3 +44,33 @@ int ringtone;
 
 void print_point(const POINT *pt);
 void set_print(POINT *pt, int x, int y);
+
+
+
+======== 공용체 ========
+공용체의 멤버들은 같은 주소에 할당되고, 서로 메모리를
+공유한다.
+
+ 모든 멤버들이 메모리를 공유한다 
+
+union test {
+int i;
+char c;
+short s;
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
