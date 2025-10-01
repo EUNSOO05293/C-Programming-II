@@ -17,7 +17,7 @@ struct Student {
 	char major[32];
 	int year;
 };
-typedef struct Student Student;
+typedef struct Student s;
 
 int main()
 {
