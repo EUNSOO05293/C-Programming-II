@@ -124,6 +124,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ch07-01.c" />
+    <ClCompile Include="copy_print_array.c" />
+    <ClCompile Include="hello.c" />
+    <ClCompile Include="isEqualArrayint.c" />
+    <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

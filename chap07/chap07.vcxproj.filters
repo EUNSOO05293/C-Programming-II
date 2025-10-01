@@ -18,5 +18,17 @@
     <ClCompile Include="ch07-01.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="copy_print_array.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="isEqualArrayint.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="hello.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
