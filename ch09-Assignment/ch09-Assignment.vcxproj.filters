@@ -24,5 +24,8 @@
     <ClCompile Include="assign03.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="assign05.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
