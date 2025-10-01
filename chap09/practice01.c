@@ -9,6 +9,7 @@
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <string.h>
 #define Students 100
 
 struct Student {
@@ -17,7 +18,7 @@ struct Student {
 	char major[32];
 	int year;
 };
-typedef struct Student s;
+typedef struct Student Student;
 
 int main()
 {
@@ -25,15 +26,24 @@ int main()
 	int studentCount = 0;
 	char line[128];
 
-	printf("(이름 | 학번 | 학과 | 학년) 형식으로 입력하세요\n");
+	printf("이름 | 학번 | 학과 | 학년 형식으로 입력하세요\n");
 	printf("종료 하려면 'exit'를 입력하세요.\n");
 	
 
 	while (studentCount < 100)
 	{
 		printf("입력 > ");
-		getchar();
-		fgets(Student.name);
+		scanf("%s %s %s %d", &students[studentCount].name, &students[studentCount].id, &students[studentCount].major, &students[studentCount ].year);
+	
+		if (strcmp(students[studentCount].name, "exit") == 0)
+			break;
+
+		printf("-------------------------------------\n");
+		printf("출력 %s %s %s %d \n", students[studentCount].name, students[studentCount].id,students[studentCount].major,students[studentCount].year);
+		printf("-------------------------------------\n");
+		studentCount++;
+
+		
 	}
 	
 
