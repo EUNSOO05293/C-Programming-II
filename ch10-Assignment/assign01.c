@@ -13,25 +13,29 @@
 #include <string.h>
 #define MAX 20
 
-struct LOGIN {
-	char id[MAX + 1];
-	char password[MAX + 1];
+struct Login {
+    char id[MAX + 1];
+    char pw[MAX + 1];
 };
-void manageLogin();
+
+void loginManage();
+
 int main() {
-	manageLogin();
-	return 0;
+    loginManage();
+    return 0;
 }
-void manageLogin() {
-	struct LOGIN user;
-	printf("아이디: ");
-	scanf("%20s", user.id);
-	printf("패스워드: ");
-	scanf("%20s", user.password);
-	printf("아이디: %s\n", user.id);
-	printf("패스워드: ");
-	for (int i = 0; i < strlen(user.password); i++) {
-		printf("*");
-	}
-	printf("\n");
+
+void loginManage() {
+    struct Login user;
+    printf("ID? ");
+    scanf("%20s", user.id);
+    printf("Password? ");
+    scanf("%20s", user.pw);
+
+    printf("ID: %s\n", user.id);
+    printf("PW: ");
+    for (int i = 0; i < strlen(user.pw); i++) {
+        printf("*");
+    }
+    printf("\n");
 }
