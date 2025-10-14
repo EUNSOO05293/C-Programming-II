@@ -7,8 +7,10 @@
  등록할 수 있다.
  날짜: 2025-10-07
 */
-
+#define SONG_COUNT (sizeof(songs)/sizeof(songs[0]))
+#define MAX_PLAYLIST 5
 #define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 
@@ -30,8 +32,7 @@ struct song songs[] = {
     {"아낙네", "MINO", "hip-hop", 241}
 };
 
-#define SONG_COUNT (sizeof(songs)/sizeof(songs[0]))
-#define MAX_PLAYLIST 5
+
 
 void playlist() {
     struct song* playlist[MAX_PLAYLIST] = { NULL };
