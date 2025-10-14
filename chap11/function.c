@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+extern int get_id(void);
+
+// 함수명: get_id()
+// 기능: 1001번부터 차례 유일한 번호를 증가하면서 반환하는 기능
+// 입력: 없음
+// 반환값: 1001부터 시작해서 1씩 증가하는 유일한 값
+// 오류 : 없음
+
+static int last_id = 1000;
+
+int last_id = 1000;
+
+int get_id(void)
+{
+	
+	return ++last_id;;
+}
