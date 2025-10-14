@@ -11,7 +11,7 @@ extern int get_id(void);
 // 오류 : 없음
 
 static int last_id = 1000;
-int inc_id(int n);
+static int inc_id(int n);
 
 int last_id = 1000;
 
@@ -24,7 +24,7 @@ int get_id(void)
 	return ++last_id;;
 }
 
-int inc_id(int n)
+static int inc_id(int n)
 {
 	return n + 1;
 }
