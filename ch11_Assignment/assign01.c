@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int count_num(int n);
+int count_digits(int n);
 int num = 0;
 
 int main()
@@ -21,16 +21,16 @@ int main()
         if (num == 0)
             return 0;
 
-        printf("count of digits: %d\n", count_num(num));
+        printf("count of digits: %d\n", count_digits(num));
     }
 }
 
-int count_num(int n) {
+int count_digits(int n) {
     if (n < 0)
         n = -n;
 
     if (n < 10)
         return 1;
 
-    return 1 + count_num(n / 10);
+    return 1 + count_digits(n / 10);
 }
